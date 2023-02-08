@@ -31,25 +31,17 @@
 </head>
 <body>
     <div class="top-bar-guidance">
-    <p>点击右上角选择浏览器（不要选QQ浏览器）打开</span></p>
+    <p>点击右上角选择浏览器打开</span></p>
     <p>可以继续浏览本站哦~</p>
 </div>
 <a style="display: none;" href="" id="vurl" rel="noreferrer"></a>
 <div id="contens">
-1.防止腾讯屏蔽本站链接<br /><br />
-2.建议用QQ浏览器打开效果最佳<br /><br />
-3.您也可以百度搜索关键字:5G云源码分享网<br />
-</div>
-<div id="browser">
-    <a href="mttbrowser://url=http://gv1069.vip"><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1g019l1s0o0j3074074t9r.jpg"></img></a>
-    <a href="googlechrome://browse?url=http://gv1069.vip"><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1g019l1zpavj3074074tax.jpg"></img></a>
-    <a href="alipays://platformapi/startapp?appId=20000067&url='http://gv1069.vip'"><img src="http://wx4.sinaimg.cn/mw690/0060lm7Tly1g019l1rqdbj3074074gmp.jpg"></img></a>
-    <a href="googlechrome://browse?url=http://gv1069.vip"><img src="http://wx2.sinaimg.cn/mw690/0060lm7Tly1g019l1rjw5j3074074dfy.jpg"></img></a>
-    <a href="ucbrowser://gv1069.vip"><img src="http://wx4.sinaimg.cn/mw690/0060lm7Tly1g019l1snd3j3074074gnv.jpg"></img></a>
-    <a href="bdbrowser://gv1069.vip"><img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1g019v4k8vkj307407440t.jpg"></img></a>
+1.防止腾讯屏蔽本站链接；<br /><br />
+2.禁止用“QQ浏览器”打开（腾讯系产品全拦截）；<br /><br />
+3.您也可以在下方复制链接自行打开；<br />
 </div>
 <div class="app-download-tip">
-    <span class="guidance-desc">点击上方图标or复制本站网址自行打开</span>
+    <span class="guidance-desc">点击下方按钮复制本站网址自行打开</span>
 </div>
 <a data-clipboard-text="http://gv1069.vip" class="app-download-btn">点此复制本站网址</a>
     <script>
@@ -86,36 +78,5 @@ layer.tips("复制成功，么么哒", ".app-download-btn", {
 });})
 </script>
 <script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=3&id=45302205",function(data){});</script>
-<script>
-function openu(u){
-document.getElementById("vurl").href= u;
-document.getElementById("vurl").click();
-}
-var url = window.location.href;
-    if(navigator.userAgent.indexOf("QQ/")> -1){
-        openu("ucbrowser://"+url);
-        openu("mttbrowser://url="+url);
-        openu("baiduboxapp://browse?url="+url);
-        openu("googlechrome://browse?url="+url);
-        openu("mibrowser:"+url);
-
-        $("html").on("click",function(){
-            openu("ucbrowser://"+url);
-            openu("mttbrowser://url="+url);
-            openu("baiduboxapp://browse?url="+url);
-            openu("googlechrome://browse?url="+url);
-            openu("mibrowser:"+url);
-
-        });
-    }else if(navigator.userAgent.indexOf("MicroMessenger") > -1){
-        if(navigator.userAgent.indexOf("Android") > -1){
-            var iframe = document.createElement("iframe");
-            iframe.style.display = "none";
-            document.body.appendChild(iframe);
-        }else{
-              
-        }
-    }
-</script>
 </body>
 </html>
