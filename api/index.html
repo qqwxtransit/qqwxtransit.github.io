@@ -32,8 +32,8 @@
 <body>
     <div class="top-bar-guidance">
     <p>点击右上角选择浏览器打开</p>
-    <p>禁止用QQ浏览器打开</p>
-    <p>可以继续浏览本站哦~</p>
+    <p>不要用QQ浏览器打开</p>
+    <p>才可以继续浏览本站哦~</p>
 </div>
 <a style="display: none;" href="" id="vurl" rel="noreferrer"></a>
 <div id="contens">
@@ -44,7 +44,7 @@
 <div class="app-download-tip">
     <span class="guidance-desc">点击下方按钮复制本站网址自行打开</span>
 </div>
-<a data-clipboard-text="http://gv1069.vip" class="app-download-btn">点此复制本站网址</a>
+<a data-clipboard-text="http://gv1069.vip" class="app-download-btn" onclick="myFunction()">点此复制本站网址</a>
     <script>
     var url = document.location.toString();
     var urlParmStr = "http://gv1069.vip"; 	    
@@ -71,12 +71,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
 <script type="text/javascript">
-  new ClipboardJS(".app-download-btn");
-  $(".app-download-btn").click(function() {
-layer.tips("复制成功，么么哒", ".app-download-btn", {
-  tips: [3, "rgb(38,111,250)"],
-  time:500
-});})
+  function myFunction() {
+  navigator.clipboard.writeText("http://gv1069.vip");
+  alert("复制的文本为: http://gv1069.vip");
+}
 </script>
 <script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=3&id=45302205",function(data){});</script>
 </body>
