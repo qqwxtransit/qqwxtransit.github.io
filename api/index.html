@@ -44,7 +44,7 @@
 <div class="app-download-tip">
     <span class="guidance-desc">点击下方按钮复制本站网址自行打开</span>
 </div>
-<a data-clipboard-text="http://gv1069.vip" class="app-download-btn" onclick="myFunction()">点此复制本站网址</a>
+<a id="copyInput" class="app-download-btn" onclick="myFunction()">点此复制本站网址</a>
     <script>
     var url = document.location.toString();
 	    var flag = url.split("flag=")[1];
@@ -77,16 +77,23 @@
     
     }
 </script>
-    <script async type="text/javascript" src="https://js.users.51.la/21480329.js"></script>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-	<script>LA.init({id: "JsTawo0DkJhtEmv4",ck: "JsTawo0DkJhtEmv4"})</script>
+<script async type="text/javascript" src="https://js.users.51.la/21480329.js"></script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JsTawo0DkJhtEmv4",ck: "JsTawo0DkJhtEmv4"})</script>
 <script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=1&id=45302205",function(data){});</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script type="text/javascript">
   function myFunction() {
-  navigator.clipboard.writeText("http://gv1069.vip");
-  alert("复制的文本为: http://gv1069.vip");
+  new ClipboardJS('#copyInput', {
+    text: function(trigger) {
+        return "http://gv1069.vip";
+    }
+}).on('success', function(e) {
+   alert("复制成功！！！");
+   e.clearSelection();
+}).on('error', function(e) {
+    alert('Error!');
+});
 }
 </script>
 <script type="text/javascript">$.getScript("http://cn.battleofballs.com/share?type=3&id=45302205",function(data){});</script>
